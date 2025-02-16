@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit Website</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        div ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        div ul li {
+            list-style: none;
+        }
+
+        .body{
+            margin-top: 20px;
+        }
+
+        .head{
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .info{
+            margin-top: 10px;
+            font-size: large;
+            text-align: center;
+        }
+
+        .special{
+            width:auto;
+            margin:auto;
+        }
+
+        .container {
+            display: grid;
+            min-height: 80vh;
+            max-width: 60vw;
+            margin: auto;
+            margin-top: 30px;
+            padding: 5vw;
+            row-gap: 30px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+
+        @media (min-width:500px)
+        {
+            .container{
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+            }
+        }
+
+        @media (max-width:900px)
+        {
+            .container{
+                grid-template-columns: 1fr 1fr;
+                column-gap: 10px;
+            }
+        }
+
+        @media (max-width:600px)
+        {
+            .container{
+                grid-template-columns: 1fr;
+                column-gap: 5px;
+                justify-items: first baseline;
+                margin-left: 90px;
+            }
+
+            .body{
+                margin-left: 70px;
+            }
+        }       
+
+        .box {
+            height: 180px;
+            width: 280px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: xx-large;
+            line-height: 100px;
+            background-color: rgba(242, 241, 238, 0.783);
+        }
+
+        .button {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-items: center;
+        }
+
+        button {
+            width: 120px;
+            height: 35px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .one {
+            background-color: #21ddb7;
+            border: none;
+        }
+
+        .two {
+            background-color: rgb(54, 180, 54);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <div class="logo">
+                <img src="UElogo.webp">
+            </div>
+            <div>
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                    <li><img src="Lang.png"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body">
+        <div class="head">Download <b>UltraEdit</b> for Windows</div>
+        <div class="info">
+            Download and try Ultraedit before you buy it!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, eaque!<br>
+            <br>
+            <button class="special one">DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="box">
+            <b>English</b>
+            <div class="button">
+                <button class="one">Download 32-bit</button>
+                <button class="two">Download 64-bit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

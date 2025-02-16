@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      .container {
+        width: 40vw;
+        height: 70vh;
+        background-color: blue;
+      }
+
+      .box {
+        width: 4vw;
+        height: 7vh;
+        background-color: rgb(85, 245, 11);
+        /* animation-name: Manoj;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 0ms;
+            animation-iteration-count: infinite;
+            animation-direction: none alternate-reverse ; */
+        /* animation-play-state: paused; */
+        animation: Manoj 3s ease-in-out 0s infinite, Kumar 3s ease 0s infinite;
+        /* fill mode -->study */
+      }
+
+      @keyframes Manoj {
+        from {
+          background-color: red;
+        }
+        to {
+          transform: translateX(40vw) translateY(70vh);
+          background-color: brown;
+        }
+      }
+
+      @keyframes Kumar {
+        /* from{
+               transform:scale(1);
+            }
+            to{
+                transform:scale(2);
+            } */
+        0% {
+          transform: rotate3d(34);
+          transform: scale(1);
+        }
+        20% {
+          transform: rotate3d(64);
+          transform: scale(2);
+        }
+        40% {
+          transform: rotate3d(94);
+          transform: scale(1);
+        }
+        60% {
+          transform: rotate3d(134);
+          transform: scale(2);
+        }
+        80% {
+          transform: rotate3d(234);
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box translate"></div>
+    </div>
+  </body>
+</html>

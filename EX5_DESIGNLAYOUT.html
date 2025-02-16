@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            border: 2px solid black;
+        }
+
+        footer {
+            border: 2px solid black;
+            height: 7vh;
+        }
+
+        .Box1 {
+            height: 7vh;
+            position: sticky;
+            background-color: pink;
+        }
+
+        .Box2 {
+            height: 80vh;
+            padding: 7px;
+            background-color:bisque;
+        }
+
+        .Box4 {
+            height: 40vh;
+            padding: 5px;
+            background-color: rgb(57, 239, 25);
+        }
+
+        .Box5 {
+            height: 37vh;
+            margin: 10px;
+            margin-left: 7vh;
+            margin-right: 7vh;
+            width: 42vw;
+            display: inline-block;
+            background-color: rgb(43, 6, 252);
+        }
+
+        .Box6 {
+            /* margin-top: 2vh;
+            margin-left:13vh; */
+            /* margin:auto;
+            
+            
+            font-weight: 70px;
+            overflow: auto; */
+            border-radius: 40px;
+            height: 14vh;
+            margin: auto;
+            margin-top: 1vh;
+            font-size: 40px;
+            text-align: center;
+            width: 40vw;
+            /* display: inline-block; */
+        }
+
+        .Box7 {
+            /* margin-top: 0;
+            height:14vh;*/
+            margin-top: 16px;
+            border-radius: 100%;
+            padding: 2px;
+            width: 2vw;
+            margin-left: 70vw;
+            height:4vh;
+            position: fixed;
+            /* display: inline-block; */
+            background-color: black;
+        }
+
+        img{
+            width:2vw;
+            height:4vh;
+            border-radius:100% ;
+            object-fit: fill;
+        }
+        footer{
+            background-color: rgb(8, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box1">
+        <!-- This is box1 -->
+    </div>
+    <div class="Box2">
+        <!-- This is Box2 -->
+        <div class="Box4">
+            <!-- This is Box4 -->
+            <div class="Box5">
+
+            </div>
+            <div class="Box5">
+
+            </div>
+        </div>
+        <div class="Box7"><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAA7VBMVEUAAAD////4nxu0srG/vby5t7aKiIj+oxv7oRsAAAPj4+Pt7e3/qRx+fn74+Pjz8/MuLi49PT2cnJxcXFza2tpVVVUAAAgfHx8pKSlPT08/Kg3olRpjY2M2NjYMDAzGxsa5ehwWFhbq4NX/owD4mwDFgRpJMA1dPQ7ejxlFREQxIQvXjB1ra2umpqYcEwgjGQx/UxOSYBiOblFLKADoqFxlQQzopVLpoEGucxrf2NLomzJPNQvTwK3TjizMgQDYy750RwBwYlQwFwCdZxTNpXexbQDhsn3r07zlx6fjrG6BYTvQtJf04M3fu5OCTQBvh6+DAAAHoklEQVR4nO2deXviNhCHsTHYnAkkwMYOxMnGXA7EaTebdOkerdumR9rv/3FqA1kOa8bGliWLx7+/A49eRjOj0TEpFFirVZW21WwzHwE9dXZZJKl2x3tIsXV2Lu2rNOA9qJgisEjnZ7xHFU8kFqlZ5j2sWOqQWCRJyBAw2fd9gWFOa2QWEWH6EMtJg/fQDhZoF6kqXKKZgCyScs17cAcqkPc3qok2y4j5Za0Z78EdKIyl1Oc9usME5MoVyynv0R2mC9hfhGPpIyzKO96jO0xwfhHPLqcnx8PSwlgEm2Oo7wvGcnZEcQzLL8ox5cpjYhHMX6AaWUQWNFcKxvLuiPL+uyPKlS3MLj3eoztMWN6/+eFHXaS9ZayuvPnwXrPdR73Ce5ARhbPcyrJaly1nKAROKIsnTZXtB533SMOF7ClJNx9XLL48HCfrvtNCWKpPG5aldaxsG+caicnVj9ssPo5mOLwHjOgayZU/Pe2xLK3zzHvIoPoHsniq2xl1nAtkjt3sz7HvgcAY8h43SViNDLJ4NOMR75EHdYmxfABZljRZS6CXEXIlRGNnjCYBy5KG9/i3heV9II7tzrQFb4KNsDhW/RTK4se0zNBg+8nVcLv40uSMLG2wXLli0TyF0kx5c/iaNFF/0VRNNsZjw1u7oESanIHs2cHzvmE6+rxbqXTnumMa/phBGoN7TEPyfvPnz1+c7vYfDxzLgM2j8c6eWN7/6n7r7v99xbFg46jjR540WI189cuvpI9MHwwVoWFNsBG2tlQmwIcqjzZCw81vsLyPnb8MrTpMwymmYeeV+Jn41IZpDC75BttPVkL2xvUxQjNnM/5t9ZFcGX5XQUf8Rr5nMf5tXSSwiy+MZhyI6OkKjWORziuHNrwYYLtng+VKpRXtOxYgjcY0pGF1ZVQWhEaTH9Ic/a6wvH/I+f4C8hvNZLasSe4vbxoCNKrFKjxjNfKh98d0cvZULUbRGauRo8TkXZFpVIvNpm2PKgtEwyY2txLlfZKmQb/RDCbRDDsTj2MXX7q1T6PZLFxmksqdq+BagIVhTq8Qlsi5MqjRLo3KIsucFmGHScLiZc+tmaapFouKppwWizfTnuW6uiSpyy4LljPY+ZPf65t/c21vTWbY7iOL9T/iMAqNuz3z4ehxtGB0r6YBswh256pQuAZZrgS7C+epeDx2KQxAFsHu9PqCDJM0JvNQD0gxIrIU2kfEUiAXylcC+kuhcEmsyGpCshRKRMNc8B5WPBHLGNEei65FXGLWBLts/aY2yWUiPBXvdcpFhZKK5Q6dX08hsFTDo/KkrZSK1FRS2lSclLT4L4eu1TszhR7KEmdGoQ1Ki+D/zcuwT01mFM2ypikmtw3pvdUVdJb8XW3qLL5tEvdBIB3GzMK88YzyHFtJSdyh4o4QmUP73szSYPGUFIawK9MMaxXRS2GS+UpcCrZjwExSmWUeTIcDzEVKMKWk3UOyBKMkTTXl4GomFOY0LZik5WCsaJYOS1FJyELOM2GrmUYqpikl7lFFXAGEVZn9VGJz8k0H0tqsFuqIdymYRqHQCYm0ag792mv6E00pUyhpSDDhOzPXdyWqU62kNGiUZ4REE2k7o+VVZ9SkzOhsoJBis3Qe5WfqXZYp6Y7a/jxxd0a0tmRvIh6aNUPrs2zqjrijeS7eKdNS5L3mkmjN/FaaEWEE3dQE7v80xaSBzs2FpOkDMCK2WiVv0a5oMvrSGhN43Cy1xYtpA+BYU0zbIE0X6fjNdDEaLVi9aWjAV02T01QWrmmPx7b5wObmfA/InDRo5q6t1lXNv25mPzC5bd6HL2klzJ5TU/5+FVCVn5nQXMD3TRPRTM3tx5sao1vN2CuA+DNtau7eBdZkNh1csHcAcWnuzf17zarN5mkTubJZ08TKN1MzcH+eWXMd2jQEFmZvAdB0E2OmkVk0k9WigibNPZGF4WOgQplaFCDbhSnMoEGJZj8mb2Sye6mJ0RyQPb1cCbDIboqj39eAcJh2MM09yMK6AQVCE3GmBXPlBsZi3LAhKQ3sL55hmL/URiN0aJqA4pjPInPo1tBA3tKF0aAsXPpoxJ9pQK70pfJqehg3eyL+wo0Fp4Ej9DDwljELLF72RKq1InnuVxykR4PBs+spthY4+e13Qpsv3TTgjkBcWTwhNK+fDHcvY0yfkV5NPOfYWvAjwZM/bpfdf9eLxq7+YPv9wSCxKv1Rwe+dX/yfu17XDNuybEOr10Fnkbnll32BlfTrp5Ud1KUQkKzYxRdE8wYTQZlhAaNAdJgM+P5GZJoXOApnmIVM0/wzUtfJzLEQs2ftr2gw3HNlQIPgOu0lsl0yxlIIzrTax5BovGbJThzb1m7tWXt6H4UlI7kyqMst29Q+R2PJTgfdfQ2uastaunnydRyFRZPtTHScBfT3P6+vry//Pt1G8RfVYHPiF1v/fZHl22gosuVkm8VvVGIg6/wNijp2M9KiGdNgFI6jqYbLvQdwNN0vXAOrXdS64S44dMuMqbnu2EAtptZVy9HFQfFVmU8dW/aANjNOU72y0/P66Tzrfk9UV3dM23jrcW7Yz44w/6wJUnd+72neFZ0jV65cuXLlypUrV65cuXLlypUrV65cuXIB+h8wdLR05x8QjAAAAABJRU5ErkJggg==">
+        </div>
+        <div class="Box6">
+            Welcome to this Sigma Web<br>
+            Development Express
+        </div>
+        <!-- <span>
+            ing
+        </span> -->
+    </div>
+    <footer class="Box3">
+        <!-- Footer -->
+    </footer>
+</body>
+
+</html>

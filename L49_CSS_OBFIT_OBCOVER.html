@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit & cover</title>
+    <style>
+    div{
+        height:40vh;
+        width:40vw;
+        border:2px solid red;
+        /* background-img:url("use") */
+        /* background-position:center center */
+        /* background-repeat/clip: study */
+    }
+
+    img{
+        height:40vh;
+        width:40vw;
+        object-fit: fill;
+        /* cover covers the box such that aspect ratio is maintained*/
+        /* contain gives full image but doesn't cover the box*/
+        object-position:top-right;
+        /*object-position:50% 50% use diff. combinations and check in inspect tools  */
+        /* position is which portion whst u want to see  when in cover*/
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="boat.webp" alt="ku">
+    </div>
+</body>
+</html>
